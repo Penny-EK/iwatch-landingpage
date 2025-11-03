@@ -1,0 +1,152 @@
+/* @import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b9cfdd;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertikalt */
+  justify-content: space-between; /* Horisontalt */
+}
+nav ul {
+  display: flex;
+  gap: 90px;
+  list-style: none;
+  align-items: center; /* Vertikalt */
+  justify-content: center; /* Horisontalt */
+}
+
+nav li a {
+  color: #fff;
+  font-family: poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+nav li.active {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 35px;
+  border-radius: 99px;
+}
+
+.active a {
+  color: #b9cfdd;
+}
+
+.grid3-1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.hero h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 86px; /* 134.375% */
+  letter-spacing: 1.28px;
+}
+
+.hero h2 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 86px; /* 134.375% */
+  letter-spacing: 1.28px;
+}
+
+.hero button {
+  width: 250px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  background-color: transparent;
+
+  /* text */
+  color: #fffafa;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.innerSection {
+  max-width: 1211px;
+  margin: 0 auto;
+}
+
+.grid1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.horizontalColorSelector {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.colorVariant {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.colorVariant.active {
+  border: 3px solid #fff;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navy {
+  background: #404354;
+}
+.mint {
+  background: #58d7c4;
+}
+.ocean {
+  background: #f2cec6;
+}
+
+.dotContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
