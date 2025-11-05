@@ -10,18 +10,42 @@ const Gallery = () => {
 
   return (
     <article>
-      <div className="gallery">
+      <div className="grid grid-cols-[12fr_1fr]">
         <Preview selectedColor={selectedColor} />
-        <div className="dotContainer">
-          <Dot color="navy" onClick={() => setSelectedColor("navy")} isSelected={selectedColor === "navy"} />
-          <Dot color="mint" onClick={() => setSelectedColor("mint")} isSelected={selectedColor === "mint"} />
-          <Dot color="ocean" onClick={() => setSelectedColor("ocean")} isSelected={selectedColor === "ocean"} />
+        <div className="flex flex-col justify-center gap-5">
+          <Dot
+            color="navy"
+            onClick={() => setSelectedColor("navy")}
+            isSelected={selectedColor === "navy"}
+          />
+          <Dot
+            color="mint"
+            onClick={() => setSelectedColor("mint")}
+            isSelected={selectedColor === "mint"}
+          />
+          <Dot
+            color="ocean"
+            onClick={() => setSelectedColor("ocean")}
+            isSelected={selectedColor === "ocean"}
+          />
         </div>
       </div>
-      <div className="grid1-1-1">
-        <ColorSelector image="navy" onClick={() => setSelectedColor("navy")} isSelected={selectedColor === "navy"} />
-        <ColorSelector image="mint" onClick={() => setSelectedColor("mint")} isSelected={selectedColor === "mint"} />
-        <ColorSelector image="ocean" onClick={() => setSelectedColor("ocean")} isSelected={selectedColor === "ocean"} />
+      <div className="grid grid-cols-3 gap-1 py-7">
+        <ColorSelector
+          image="navy"
+          onClick={() => setSelectedColor("navy")}
+          isSelected={selectedColor === "navy"}
+        />
+        <ColorSelector
+          image="mint"
+          onClick={() => setSelectedColor("mint")}
+          isSelected={selectedColor === "mint"}
+        />
+        <ColorSelector
+          image="ocean"
+          onClick={() => setSelectedColor("ocean")}
+          isSelected={selectedColor === "ocean"}
+        />
       </div>
     </article>
   );
