@@ -4,28 +4,53 @@ import { RiShoppingBag3Line } from "react-icons/ri";
 
 const Header = () => {
   return (
-    <nav className="innerSection">
-      <div className="logo">
-        <FaApple size={40} color="white" />
-      </div>
-      <ul className="menu">
+    <nav className="mx-auto flex max-w-[1211px] flex-row items-center justify-between py-7">
+      <FaApple size={40} color="white" />
+
+      <ul className="flex list-none items-center justify-center gap-[90px]">
         <li>
-          <a href="">Mac</a>
+          <a
+            className="font-[Poppins] text-[18px] font-medium text-white no-underline"
+            href=""
+          >
+            Mac
+          </a>
         </li>
         <li>
-          <a href="">iPhone</a>
+          <a
+            className="font-[Poppins] text-[18px] font-medium text-white no-underline"
+            href=""
+          >
+            iPhone
+          </a>
         </li>
         <li>
-          <a href=""> iPad</a>
+          <a
+            className="font-[Poppins] text-[18px] font-medium text-white no-underline"
+            href=""
+          >
+            {" "}
+            iPad
+          </a>
         </li>
-        <li className="active">
-          <a href="">iWatch</a>
+        <li className="rounded-full bg-white px-[35px] py-2.5">
+          <a
+            className="font-[Poppins] text-[18px] font-medium text-[#b9cfdd] no-underline"
+            href=""
+          >
+            iWatch
+          </a>
         </li>
         <li>
-          <a href="">Support</a>
+          <a
+            className="font-[Poppins] text-[18px] font-medium text-white no-underline"
+            href=""
+          >
+            Support
+          </a>
         </li>
       </ul>
-      <div>
+      <div className="flex flex-row items-center justify-center gap-4">
         <AiOutlineSearch color="white" size={24} />
         <RiShoppingBag3Line color="white" size={24} />
       </div>

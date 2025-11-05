@@ -27,7 +27,9 @@ import Header from "@/components/Header";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} font-[Arial, font-sans] bg-[#b9cfdd] antialiased`}
+      >
         <header>
           <Header />
         </header>
